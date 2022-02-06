@@ -1,0 +1,8 @@
+E:\WIPFLI\WIPFLI.SalePriceCalculator\WIPFLI.SalePriceCalculator.Entity\bin\Debug\netcoreapp2.1\WIPFLI.SalePriceCalculator.Entity.deps.json
+E:\WIPFLI\WIPFLI.SalePriceCalculator\WIPFLI.SalePriceCalculator.Entity\bin\Debug\netcoreapp2.1\WIPFLI.SalePriceCalculator.Entity.dll
+E:\WIPFLI\WIPFLI.SalePriceCalculator\WIPFLI.SalePriceCalculator.Entity\bin\Debug\netcoreapp2.1\WIPFLI.SalePriceCalculator.Entity.pdb
+E:\WIPFLI\WIPFLI.SalePriceCalculator\WIPFLI.SalePriceCalculator.Entity\obj\Debug\netcoreapp2.1\WIPFLI.SalePriceCalculator.Entity.csproj.CoreCompileInputs.cache
+E:\WIPFLI\WIPFLI.SalePriceCalculator\WIPFLI.SalePriceCalculator.Entity\obj\Debug\netcoreapp2.1\WIPFLI.SalePriceCalculator.Entity.AssemblyInfoInputs.cache
+E:\WIPFLI\WIPFLI.SalePriceCalculator\WIPFLI.SalePriceCalculator.Entity\obj\Debug\netcoreapp2.1\WIPFLI.SalePriceCalculator.Entity.AssemblyInfo.cs
+E:\WIPFLI\WIPFLI.SalePriceCalculator\WIPFLI.SalePriceCalculator.Entity\obj\Debug\netcoreapp2.1\WIPFLI.SalePriceCalculator.Entity.dll
+E:\WIPFLI\WIPFLI.SalePriceCalculator\WIPFLI.SalePriceCalculator.Entity\obj\Debug\netcoreapp2.1\WIPFLI.SalePriceCalculator.Entity.pdb

@@ -1,0 +1,38 @@
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
+
+namespace WIPFLI.SalePriceCalculator.Tests
+{
+    [TestClass]
+    public class SalePriceCalculatorUnitTests
+    {
+        [TestMethod]
+        public void TestMethod1()
+        {
+            Assert.AreEqual(0, 0);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(NotImplementedException))]
+        public void IDiscount_NotImplementedException()
+        {
+           
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentNullException))]
+        public void IDiscount_NotImplementedException()
+        {
+            // Arrange + Act + Assert
+            var shoppingBasket = new ShoppingBasket(null);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(NotImplementedException))]
+        public void IDiscount_NotImplementedException()
+        {
+            // Arrange + Act + Assert
+            var shoppingBasket = new ShoppingBasket(null);
+        }
+    }
+}

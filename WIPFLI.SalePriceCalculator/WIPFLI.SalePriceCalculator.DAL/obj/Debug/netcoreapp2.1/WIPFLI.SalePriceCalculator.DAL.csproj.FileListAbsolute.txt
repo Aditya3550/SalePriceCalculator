@@ -1,0 +1,10 @@
+E:\WIPFLI\WIPFLI.SalePriceCalculator\WIPFLI.SalePriceCalculator.DAL\bin\Debug\netcoreapp2.1\WIPFLI.SalePriceCalculator.DAL.deps.json
+E:\WIPFLI\WIPFLI.SalePriceCalculator\WIPFLI.SalePriceCalculator.DAL\bin\Debug\netcoreapp2.1\WIPFLI.SalePriceCalculator.DAL.dll
+E:\WIPFLI\WIPFLI.SalePriceCalculator\WIPFLI.SalePriceCalculator.DAL\bin\Debug\netcoreapp2.1\WIPFLI.SalePriceCalculator.DAL.pdb
+E:\WIPFLI\WIPFLI.SalePriceCalculator\WIPFLI.SalePriceCalculator.DAL\bin\Debug\netcoreapp2.1\WIPFLI.SalePriceCalculator.Entity.dll
+E:\WIPFLI\WIPFLI.SalePriceCalculator\WIPFLI.SalePriceCalculator.DAL\obj\Debug\netcoreapp2.1\WIPFLI.SalePriceCalculator.DAL.csproj.CoreCompileInputs.cache
+E:\WIPFLI\WIPFLI.SalePriceCalculator\WIPFLI.SalePriceCalculator.DAL\obj\Debug\netcoreapp2.1\WIPFLI.SalePriceCalculator.DAL.AssemblyInfoInputs.cache
+E:\WIPFLI\WIPFLI.SalePriceCalculator\WIPFLI.SalePriceCalculator.DAL\obj\Debug\netcoreapp2.1\WIPFLI.SalePriceCalculator.DAL.AssemblyInfo.cs
+E:\WIPFLI\WIPFLI.SalePriceCalculator\WIPFLI.SalePriceCalculator.DAL\obj\Debug\netcoreapp2.1\WIPFLI.SalePriceCalculator.DAL.csproj.CopyComplete
+E:\WIPFLI\WIPFLI.SalePriceCalculator\WIPFLI.SalePriceCalculator.DAL\obj\Debug\netcoreapp2.1\WIPFLI.SalePriceCalculator.DAL.dll
+E:\WIPFLI\WIPFLI.SalePriceCalculator\WIPFLI.SalePriceCalculator.DAL\obj\Debug\netcoreapp2.1\WIPFLI.SalePriceCalculator.DAL.pdb

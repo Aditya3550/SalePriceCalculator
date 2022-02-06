@@ -1,0 +1,213 @@
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
+using System.Collections.Generic;
+using WIPFLI.SalePriceCalculator.BAL.Discount;
+using WIPFLI.SalePriceCalculator.BAL.PriceCalculator;
+using WIPFLI.SalePriceCalculator.Entity;
+
+namespace WIPFLI.SalePriceCalculator.Tests
+{
+    /// <summary>
+    /// Developed By Aditya Bhushan Chaturvedi,
+    /// This Unit Test Cases is only created for PriceCalculator
+    /// All Test cases Exception/Negative/Positeve in One Place
+    /// Date : 06/02/2022
+    /// </summary>
+    [TestClass]
+    public class SalePriceCalculatorUnitTests
+    {
+        #region Unit Cases :: Common Expected Exception
+        [TestMethod]
+        [ExpectedException(typeof(NotImplementedException))]
+        public void PriceCalculator_NotImplementedException()
+        {
+            throw new NotImplementedException();
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentNullException))]
+        public void PriceCalculator_ArgumentNullExceptionProduct()
+        {
+            var PriceCalculator = new PriceCalculator(null);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentNullException))]
+        public void PriceCalculator_NullReferenceExceptionProductQuantity()
+        {
+            Product product = null;
+            var PriceCalculator = new PriceCalculator(product);
+            if (product.Quantity <= 0)
+            {
+                throw new NullReferenceException();
+            }
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(NullReferenceException))]
+        public void PriceCalculator_NullReferenceExceptionProductNull()
+        {
+            Product product = null;
+            throw new NullReferenceException();
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(NullReferenceException))]
+        public void PriceCalculator_GetFixDiscount()
+        {
+            FixDiscount fixDiscount = new FixDiscount(null);
+            Boolean actual = fixDiscount.IsApplicable();
+            Assert.AreEqual(false, actual);
+        }
+        #endregion
+
+        #region Unit Cases :: Type Null Checks
+        [TestMethod]
+        public void PriceCalculator_ProductInputTypeCheck_Quantity_Short()
+        {
+            Product product = new Product() { Id = 1, Name = "Test Name", Quantity = 2, UnitPrice = 100.0M };
+            Assert.AreEqual(product.Quantity.GetType(), typeof(short));
+        }
+
+        [TestMethod]
+        public void PriceCalculator_ProductInputTypeCheck_UnitPrice_Decimal()
+        {
+            Product product = new Product() { Id = 1, Name = "Test Name", Quantity = 2, UnitPrice = 100.0M };
+            Assert.AreEqual(product.UnitPrice.GetType(), typeof(decimal));
+        }
+
+        [TestMethod]
+        public void PriceCalculator_PriceCalculatorNullValueCheck_NotNull()
+        {
+            Product product = new Product() { Id = 1, Name = "Test Name", Quantity = 2, UnitPrice = 100.0M };
+            IPriceCalculator priceCalculator = new PriceCalculator(product);
+            Assert.IsNotNull(priceCalculator);
+        }
+
+        [TestMethod]
+        public void PriceCalculator_PriceCalculatorNullValueCheck_NameNull()
+        {
+            Product product = new Product() { Id = 1, Name = null, Quantity = 2, UnitPrice = 100.0M };
+            IPriceCalculator priceCalculator = new PriceCalculator(product);
+            Assert.IsNotNull(priceCalculator);
+        }
+
+        [TestMethod]
+        public void PriceCalculator_ProductNullValueCheck_NotNull()
+        {
+            Product product = new Product() { Id = 1, Name = "Test Name", Quantity = 2, UnitPrice = 500.0M };
+            Assert.IsNotNull(product);
+        }
+        #endregion
+
+        #region Unit Cases :: Calculation Checks
+        [TestMethod]
+        public void PriceCalculator_CalculatedPriceWihoutDiscount()
+        {
+            Product product = new Product() { Id = 1, Name = "Test Name", Quantity = 2, UnitPrice = 300.0M };
+            decimal price = product.Quantity * product.UnitPrice;
+            Assert.AreEqual(600.0M, price);
+        }
+
+
+        private static List<Product> GetSampleProducts()
+        {
+            List<Product> products = new List<Product>();
+            products.Add(new Product()
+            {
+                Id = 1,
+                Name = "Thumbs up",
+                UnitPrice = 100,
+                Quantity = 0,
+                Discount = 10
+            });
+            products.Add(new Product()
+            {
+                Id = 2,
+                Name = "Toilet Cleaner",
+                UnitPrice = 200,
+                Quantity = 0,
+                Discount = 10
+            });
+            products.Add(new Product()
+            {
+                Id = 3,
+                Name = "Mangoes",
+                UnitPrice = 300,
+                Quantity = 0,
+                Discount = 0
+            });
+            products.Add(new Product()
+            {
+                Id = 4,
+                Name = "Cooking Oil Bottle - 1 liter",
+                UnitPrice = 400,
+                Quantity = 0,
+                Discount = 0
+            });
+            products.Add(new Product()
+            {
+                Id = 5,
+                Name = "Sugar",
+                UnitPrice = 500,
+                Quantity = 0,
+                Discount = 0
+            });
+            products.Add(new Product()
+            {
+                Id = 6,
+                Name = "Tea",
+                UnitPrice = 600,
+                Quantity = 0,
+                Discount = 5
+            });
+            products.Add(new Product()
+            {
+                Id = 7,
+                Name = "Bulbs",
+                UnitPrice = 700,
+                Quantity = 0,
+                Discount = 0
+            });
+
+
+            return products;
+        }
+
+
+        [TestMethod]
+        [DataRow(1, 2)]
+        [DynamicData(nameof(GetSampleProducts), DynamicDataSourceType.Method)]
+        public void PriceCalculator_CalculatedPriceWihDiscount()
+        {
+            Product product = new Product() { Id = 1, Name = "Test Name", Quantity = 2, UnitPrice = 300.0M };
+            decimal price = product.Quantity * product.UnitPrice;
+            Assert.AreEqual(600.0M, price);
+        }
+
+        //[TestMethod]
+        //public void PriceCalculator_CalculatedPriceWihoutDiscount()
+        //{
+        //    Product product = new Product() { Id = 1, Name = "Test Name", Quantity = 2, UnitPrice = 300.0M };
+        //    decimal price = product.Quantity * product.UnitPrice;
+        //    Assert.AreEqual(600.0M, price);
+        //}
+
+        //[TestMethod]
+        //public void PriceCalculator_CalculatedPriceWihoutDiscount()
+        //{
+        //    Product product = new Product() { Id = 1, Name = "Test Name", Quantity = 2, UnitPrice = 300.0M };
+        //    decimal price = product.Quantity * product.UnitPrice;
+        //    Assert.AreEqual(600.0M, price);
+        //}
+
+        //[TestMethod]
+        //public void PriceCalculator_CalculatedPriceWihoutDiscount()
+        //{
+        //    Product product = new Product() { Id = 1, Name = "Test Name", Quantity = 2, UnitPrice = 300.0M };
+        //    decimal price = product.Quantity * product.UnitPrice;
+        //    Assert.AreEqual(600.0M, price);
+        //}
+        #endregion
+    }
+}

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="WIPFLI.SalePriceCalculator.Entity">
+      <HintPath>..\WIPFLI.SalePriceCalculator.Build\WIPFLI.SalePriceCalculator.Entity.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="copy /Y &quot;$(TargetDir)$(TargetFileName)&quot; &quot;$(SolutionDir)\$(SolutionName).Build\$(ProjectName).dll&quot;" />
+  </Target>
+
+</Project>

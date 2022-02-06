@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1778
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WIPFLI.SalePriceCalculator.Client", "WIPFLI.SalePriceCalculator.Client\WIPFLI.SalePriceCalculator.Client.csproj", "{C64E4B99-BC70-4C97-9BD8-6C083414E16F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WIPFLI.SalePriceCalculator.Utility", "WIPFLI.SalePriceCalculator.Utility\WIPFLI.SalePriceCalculator.Utility.csproj", "{408C5689-F149-4E34-98B0-4F07CEE47168}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WIPFLI.SalePriceCalculator.BAL", "WIPFLI.SalePriceCalculator.BAL\WIPFLI.SalePriceCalculator.BAL.csproj", "{5556203C-FFB7-41A8-9B26-5C2CE5390557}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WIPFLI.SalePriceCalculator.Tests", "WIPFLI.SalePriceCalculator.Tests\WIPFLI.SalePriceCalculator.Tests.csproj", "{D44601E7-2BD1-402B-A83A-8EE5747757B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WIPFLI.SalePriceCalculator.DAL", "WIPFLI.SalePriceCalculator.DAL\WIPFLI.SalePriceCalculator.DAL.csproj", "{35F763D2-7E7D-400D-97A0-2938E6068C95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WIPFLI.SalePriceCalculator.Entity", "WIPFLI.SalePriceCalculator.Entity\WIPFLI.SalePriceCalculator.Entity.csproj", "{59803F6F-BA26-416A-8843-077AF0A006BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C64E4B99-BC70-4C97-9BD8-6C083414E16F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C64E4B99-BC70-4C97-9BD8-6C083414E16F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C64E4B99-BC70-4C97-9BD8-6C083414E16F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C64E4B99-BC70-4C97-9BD8-6C083414E16F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{408C5689-F149-4E34-98B0-4F07CEE47168}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{408C5689-F149-4E34-98B0-4F07CEE47168}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{408C5689-F149-4E34-98B0-4F07CEE47168}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{408C5689-F149-4E34-98B0-4F07CEE47168}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5556203C-FFB7-41A8-9B26-5C2CE5390557}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5556203C-FFB7-41A8-9B26-5C2CE5390557}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5556203C-FFB7-41A8-9B26-5C2CE5390557}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5556203C-FFB7-41A8-9B26-5C2CE5390557}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D44601E7-2BD1-402B-A83A-8EE5747757B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D44601E7-2BD1-402B-A83A-8EE5747757B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D44601E7-2BD1-402B-A83A-8EE5747757B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D44601E7-2BD1-402B-A83A-8EE5747757B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35F763D2-7E7D-400D-97A0-2938E6068C95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35F763D2-7E7D-400D-97A0-2938E6068C95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35F763D2-7E7D-400D-97A0-2938E6068C95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35F763D2-7E7D-400D-97A0-2938E6068C95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59803F6F-BA26-416A-8843-077AF0A006BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59803F6F-BA26-416A-8843-077AF0A006BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59803F6F-BA26-416A-8843-077AF0A006BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59803F6F-BA26-416A-8843-077AF0A006BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {098EAB0E-9044-45F1-95FA-AE067AE558A8}
+	EndGlobalSection
+EndGlobal

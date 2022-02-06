@@ -1,0 +1,13 @@
+E:\WIPFLI\WIPFLI.SalePriceCalculator\WIPFLI.SalePriceCalculator.BAL\bin\Debug\netcoreapp2.1\WIPFLI.SalePriceCalculator.BAL.deps.json
+E:\WIPFLI\WIPFLI.SalePriceCalculator\WIPFLI.SalePriceCalculator.BAL\bin\Debug\netcoreapp2.1\WIPFLI.SalePriceCalculator.BAL.dll
+E:\WIPFLI\WIPFLI.SalePriceCalculator\WIPFLI.SalePriceCalculator.BAL\bin\Debug\netcoreapp2.1\WIPFLI.SalePriceCalculator.BAL.pdb
+E:\WIPFLI\WIPFLI.SalePriceCalculator\WIPFLI.SalePriceCalculator.BAL\bin\Debug\netcoreapp2.1\WIPFLI.SalePriceCalculator.DAL.dll
+E:\WIPFLI\WIPFLI.SalePriceCalculator\WIPFLI.SalePriceCalculator.BAL\bin\Debug\netcoreapp2.1\WIPFLI.SalePriceCalculator.Entity.dll
+E:\WIPFLI\WIPFLI.SalePriceCalculator\WIPFLI.SalePriceCalculator.BAL\bin\Debug\netcoreapp2.1\WIPFLI.SalePriceCalculator.Utility.dll
+E:\WIPFLI\WIPFLI.SalePriceCalculator\WIPFLI.SalePriceCalculator.BAL\obj\Debug\netcoreapp2.1\WIPFLI.SalePriceCalculator.BAL.csproj.CoreCompileInputs.cache
+E:\WIPFLI\WIPFLI.SalePriceCalculator\WIPFLI.SalePriceCalculator.BAL\obj\Debug\netcoreapp2.1\WIPFLI.SalePriceCalculator.BAL.AssemblyInfoInputs.cache
+E:\WIPFLI\WIPFLI.SalePriceCalculator\WIPFLI.SalePriceCalculator.BAL\obj\Debug\netcoreapp2.1\WIPFLI.SalePriceCalculator.BAL.AssemblyInfo.cs
+E:\WIPFLI\WIPFLI.SalePriceCalculator\WIPFLI.SalePriceCalculator.BAL\obj\Debug\netcoreapp2.1\WIPFLI.SalePriceCalculator.BAL.csproj.CopyComplete
+E:\WIPFLI\WIPFLI.SalePriceCalculator\WIPFLI.SalePriceCalculator.BAL\obj\Debug\netcoreapp2.1\WIPFLI.SalePriceCalculator.BAL.dll
+E:\WIPFLI\WIPFLI.SalePriceCalculator\WIPFLI.SalePriceCalculator.BAL\obj\Debug\netcoreapp2.1\WIPFLI.SalePriceCalculator.BAL.pdb
+E:\WIPFLI\WIPFLI.SalePriceCalculator\WIPFLI.SalePriceCalculator.BAL\obj\Debug\netcoreapp2.1\WIPFLI.SalePriceCalculator.BAL.csprojAssemblyReference.cache

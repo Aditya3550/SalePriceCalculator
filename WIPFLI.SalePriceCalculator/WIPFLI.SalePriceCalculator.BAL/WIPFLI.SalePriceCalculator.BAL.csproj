@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath></OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="WIPFLI.SalePriceCalculator.DAL">
+      <HintPath>..\WIPFLI.SalePriceCalculator.Build\WIPFLI.SalePriceCalculator.DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="WIPFLI.SalePriceCalculator.Entity">
+      <HintPath>..\WIPFLI.SalePriceCalculator.Build\WIPFLI.SalePriceCalculator.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="WIPFLI.SalePriceCalculator.Utility">
+      <HintPath>..\WIPFLI.SalePriceCalculator.Build\WIPFLI.SalePriceCalculator.Utility.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="copy /Y &quot;$(TargetDir)$(TargetFileName)&quot; &quot;$(SolutionDir)\$(SolutionName).Build\$(ProjectName).dll&quot;" />
+  </Target>
+
+</Project>
